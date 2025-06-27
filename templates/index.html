@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>学生测验系统首页</title>
+  <style>
+    body { font-family: "Microsoft YaHei"; max-width: 900px; margin: auto; background-color: #f9f9f9; text-align: center; }
+    header { background-color: #003366; color: white; padding: 20px; }
+    h1 { font-size: 24px; }
+    .grade-title {
+      width: 100px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .test-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .test-links a {
+      text-decoration: none;
+    }
+    .menu { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .menu a { display: block; padding: 15px; background: #e3eaf2; border-radius: 8px; text-decoration: none; color: #003366; font-weight: bold; border: 1px solid #ccc; }
+    .menu a:hover { background: #d2e4f5; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="60">
+    <h1>学生测验入口</h1>
+  </header>
+    <h1>请选择测试</h1>
+  <!-- <div class="menu">
+    <a href="/grade2/english">2年级 英语</a>
+    <a href="/grade2/math">2年级 数学</a>
+    <a href="/grade3/english">3年级 英语</a>
+    <a href="/grade3/math">3年级 数学</a>
+    <a href="/grade4/english">4年级 英语</a>
+    <a href="/grade4/math">4年级 数学</a>
+    <a href="/grade5/english">5年级 英语</a>
+  </div>
+  <hr> -->
+
+
+  <div class="menu"></diva>
+    <div class="grade-title">Year 1</div>
+    <div class="test-links">
+    <a href="/grade1/english">1年级 英语</a>
+    <a href="/grade1/math">1年级 数学</a>
+    </div>
+  </div>
+
+  <div class="menu"></diva>
+    <div class="grade-title">Year 2</div>
+    <div class="test-links">
+    <a href="/grade2/english">2年级 英语</a>
+    <a href="/grade2/math">2年级 数学</a>
+    </div>
+  </div>
+
+
+  <div class="menu"></diva>
+    <div class="grade-title">Year 3</div>
+    <div class="test-links">
+    <a href="/grade3/english">3年级 英语</a>
+    <a href="/grade3/math">3年级 数学</a>
+    </div>
+  </div>
+
+  <div class="menu"></diva>
+    <div class="grade-title">Year 4</div>
+    <div class="test-links">
+    <a href="/grade4/english">4年级 英语</a>
+    <a href="/grade4/math">4年级 数学</a>
+  </div>
+  </div>
+
+  <div class="menu"></diva>
+    <div class="grade-title">Year 5</div>
+    <div class="test-links">
+    <a href="/grade5/math/gate">5年级 入门数学</a>
+    <a href="/grade5/math">5年级 数学</a>
+    <a href="/grade5~6/english">5~6年级 英语</a>
+  </div>
+  </div>
+
+  <div class="menu"></diva>
+    <div class="grade-title">Year 6</div>
+    <div class="test-links">
+    <a href="/grade6/math">6年级 数学</a>
+    <a href="/grade6/english">6年级 英语</a>
+  </div>
+  </div>
+  
+</body>
+</html>
