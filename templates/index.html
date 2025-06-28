@@ -2,10 +2,10 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>学生测验系统首页</title>
+  <title>The homepage of the student test system</title>
   <style>
-    body { font-family: "Microsoft YaHei"; max-width: 900px; margin: auto; background-color: #f9f9f9; text-align: center; }
-    header { background-color: #003366; color: white; padding: 20px; }
+    body { font-family: "Microsoft YaHei"; max-width: 900px; margin: auto; background: linear-gradient(to right, #ffffff, #5fccff); text-align: center; }
+    header { background: linear-gradient(to right, #4b9ef0, #4392b7); color: white; padding: 20px 30px; height: 250px;}
     h1 { font-size: 24px; }
     .grade-title {
       width: 100px;
@@ -27,10 +27,12 @@
 </head>
 <body>
   <header>
-    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="60">
-    <h1>学生测验入口</h1>
+    <a href="/" class="logo-link">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="200">
+  </a>
+  <h1 class="header-title">Student Test Entrance</h1>
   </header>
-    <h1>请选择测试</h1>
+    <h1>Please select the test</h1>
   <!-- <div class="menu">
     <a href="/grade2/english">2年级 英语</a>
     <a href="/grade2/math">2年级 数学</a>
