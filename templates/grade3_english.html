@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Grade3 English</title>
-  <style>
-    body { font-family: "Microsoft YaHei", sans-serif; max-width: 900px; margin: auto; background-color: #f0f4f8; }
-    header { display: flex; align-items: center; background-color: #003366; color: white; padding: 15px; }
-    header img { height: 60px; margin-right: 20px; }
-    header h1 { font-size: 22px; }
-    iframe { width: 100%; height: 1200px; border: none; }
-  </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <header>
-    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
-    <h1>年级3 英语</h1>
+    <div class="header-container">
+      <a href="/" class="logo-link">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="200">
+      </a>
+        <h1 class="header-title">Grade3 English</h1>
+      <nav>   
+          <ul>
+          <li><a href="/">Home</a></li>
+          <li style="pointer-events: none; color: #ccc;">|</li>
+          <li><a href="/about">About</a></li>
+        </ul>   
+      </nav>
+      </div>
   </header>
   <iframe src="~">正在加载表单...</iframe>
 </body>

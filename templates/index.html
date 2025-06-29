@@ -3,97 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>The homepage of the student test system</title>
-  <style>
-    body { font-family: "Microsoft YaHei"; max-width: 900px; margin: auto; background: linear-gradient(to right, #ffffff, #5fccff); text-align: center; }
-    header { background: linear-gradient(to right, #4b9ef0, #4392b7); color: white; padding: 20px 30px; height: 250px;}
-    h1 { font-size: 24px; }
-    .grade-title {
-      width: 100px;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .test-links {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .test-links a {
-      text-decoration: none;
-    }
-    .menu { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-    .menu a { display: block; padding: 15px; background: #e3eaf2; border-radius: 8px; text-decoration: none; color: #003366; font-weight: bold; border: 1px solid #ccc; }
-    .menu a:hover { background: #d2e4f5; }
-  </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+  <body>
   <header>
-    <a href="/" class="logo-link">
-    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="200">
-  </a>
-  <h1 class="header-title">Student Test Entrance</h1>
+    <div class="header-container">
+      <a href="/" class="logo-link">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="200">
+      </a>
+        <h1 class="header-title">Student Test Entrance</h1>
+      <nav>   
+          <ul>
+          <li><a href="/">Home</a></li>
+          <li style="pointer-events: none; color: #ccc;">|</li>
+          <li><a href="/about">About</a></li>
+        </ul>   
+      </nav>
+      </div>
   </header>
-    <h1>Please select the test</h1>
-  <!-- <div class="menu">
-    <a href="/grade2/english">2年级 英语</a>
-    <a href="/grade2/math">2年级 数学</a>
-    <a href="/grade3/english">3年级 英语</a>
-    <a href="/grade3/math">3年级 数学</a>
-    <a href="/grade4/english">4年级 英语</a>
-    <a href="/grade4/math">4年级 数学</a>
-    <a href="/grade5/english">5年级 英语</a>
-  </div>
-  <hr> -->
 
-
-  <div class="menu"></diva>
+<div style="text-align: left; padding-left: 40px;">
+  <h2 style="font-size: 20px; display: inline-block;
+  border-radius: 10px;
+  border-bottom: 3px solid #0055aa;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+">Please select the test</h2>
+</div>
+  <div class="menu">
     <div class="grade-title">Year 1</div>
     <div class="test-links">
-    <a href="/grade1/english">1年级 英语</a>
-    <a href="/grade1/math">1年级 数学</a>
+    <a href="/grade1/english">Grade 1 English</a>
+    <a href="/grade1/math">Grade1 Math</a>
     </div>
   </div>
 
-  <div class="menu"></diva>
+  <div class="menu">
     <div class="grade-title">Year 2</div>
     <div class="test-links">
-    <a href="/grade2/english">2年级 英语</a>
-    <a href="/grade2/math">2年级 数学</a>
+    <a href="/grade2/english">Grade2 English</a>
+    <a href="/grade2/math">Grade2 Math</a>
     </div>
   </div>
 
 
-  <div class="menu"></diva>
+  <div class="menu">
     <div class="grade-title">Year 3</div>
     <div class="test-links">
-    <a href="/grade3/english">3年级 英语</a>
-    <a href="/grade3/math">3年级 数学</a>
+    <a href="/grade3/english">Grade3 English</a>
+    <a href="/grade3/math">Grade3 Math</a>
     </div>
   </div>
 
-  <div class="menu"></diva>
+  <div class="menu">
     <div class="grade-title">Year 4</div>
     <div class="test-links">
-    <a href="/grade4/english">4年级 英语</a>
-    <a href="/grade4/math">4年级 数学</a>
+    <a href="/grade4/english">Grade4 English</a>
+    <a href="/grade4/math">Grade4 Math</a>
   </div>
   </div>
 
-  <div class="menu"></diva>
+  <div class="menu">
     <div class="grade-title">Year 5</div>
     <div class="test-links">
-    <a href="/grade5/math/gate">5年级 入门数学</a>
-    <a href="/grade5/math">5年级 数学</a>
-    <a href="/grade5~6/english">5~6年级 英语</a>
+    <a href="/grade5/math/gate">Introduction to Mathematics in Grade 5</a>
+    <a href="/grade5/math">Grade5 Math</a>
+    <a href="/grade5~6/english">Grade5~6 English</a>
   </div>
   </div>
 
-  <div class="menu"></diva>
+  <div class="menu">
     <div class="grade-title">Year 6</div>
     <div class="test-links">
-    <a href="/grade6/math">6年级 数学</a>
-    <a href="/grade6/english">6年级 英语</a>
+      <a href="/grade6/english">Grade6 English</a>
+      <a href="/grade6/math">Grade6 Math</a>
   </div>
   </div>
-  
 </body>
 </html>

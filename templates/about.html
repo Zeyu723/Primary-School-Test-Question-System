@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>About us</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    .qr-section {
+      margin-top: 40px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .qr-section img {
+      max-width: 250px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .qr-caption {
+      font-size: 18px;
+      color: #0d2f73;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="/" class="logo-link">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+      </a>
+      <h1 class="header-title">About us</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>联系老师练习</h2>
+    <div class="qr-section">
+      <img src="{{ url_for('static', filename='QR.jpg') }}" alt="扫码加老师微信">
+      <div class="qr-caption">📱 扫码加微信，与老师联系练习题目</div>
+    </div>
+  </main>
+</body>
+</html>

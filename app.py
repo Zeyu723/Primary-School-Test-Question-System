@@ -62,6 +62,10 @@ def grade6_math_gate():
 @app.route("/grade6/english")
 def grade6_english():
     return render_template("grade6_english.html")
+    
+@app.route("/about")
+def about():
+    return render_template("about.html")
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # 从环境变量读取 Render 提供的端口
     app.run(host="0.0.0.0", port=port)
