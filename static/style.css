@@ -88,7 +88,15 @@ header a:hover {
 /* =============================
    网格布局（可选）Menu Wrapper
 ============================= */
-.menu { margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+.menu {   border: 2px solid #bb66da;
+          border-radius: 12px;
+          padding: 20px;
+          margin: 20px auto;
+          width: 80%;
+          background-color: #ffffff;
+          box-shadow: 0 2px 6px rgba(126, 38, 82, 0.1);
+          text-align: left;
+  margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
 .menu a { display: block; padding: 15px; background: #e3eaf2; border-radius: 8px; text-decoration: none; color: #003366; font-weight: bold; border: 1px solid #ccc; }
 .menu a:hover { background: #d2e4f5; }
 
