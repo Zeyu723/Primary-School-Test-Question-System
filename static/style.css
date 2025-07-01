@@ -94,11 +94,16 @@ header a:hover {
           margin: 20px auto;
           width: 80%;
           background-color: #ffffff;
+          transition: background 0.3s ease, transform 0.3s ease;
           box-shadow: 0 2px 6px rgba(126, 38, 82, 0.1);
           text-align: left;
   margin-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+  /* 鼠标悬停时变色 + 微动画 */
+.menu:hover{background: #ffffff;
+  transform: scale(1.01);
+  box-shadow: 0 0 15px rgba(128, 0, 133, 0.3);}
 .menu a { display: block; padding: 15px; background: #e3eaf2; border-radius: 8px; text-decoration: none; color: #003366; font-weight: bold; border: 1px solid #ccc; }
-.menu a:hover { background: #d2e4f5; }
+.menu a:hover { background: #d2e4f5; transform: scale(1.01); box-shadow: 0 0 15px rgba(221, 0, 255, 0.3);}
 
 /* =============================
    测试菜单区域 Menu
@@ -107,7 +112,7 @@ header a:hover {
  h1 { font-size: 24px; }
 
 .grade-title {
-      width: 100px;
+      width: 300px;
       font-weight: bold;
       font-size: 18px;
       height: 50%;
@@ -164,4 +169,47 @@ iframe { width: 100%; height: 1200px; border: none; }
   header li {
     margin-right: 0;
   }
+}
+
+/*
+从 视觉效果 和 内容元素 两方面来增强它的独特性
+*/
+.special-frame {
+  background: #fff7e6;
+  border: 2px dashed #ffa500;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.potential-title {
+  width: 500px;
+  font-weight: bold;
+  display: flex;
+  align-items:start;
+  justify-content:left;
+  color: #cc7a00;
+  margin-bottom: 10px;
+}
+
+.potential-icon {
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.potential-quote {
+  font-size: 14px;
+  color: #996600;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+/* 鼠标悬停时变色 + 微动画 */
+.special-frame:hover {
+  background: #ffeed6;
+  transform: scale(1.01);
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.3);
 }

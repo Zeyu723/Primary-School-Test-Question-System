@@ -62,7 +62,15 @@ def grade6_math_gate():
 @app.route("/grade6/english")
 def grade6_english():
     return render_template("grade6_english.html")
+
+@app.route("/unlock/your/potential/english")
+def unlock_potential_english():
+    return render_template("unlock_potential_english.html")
     
+@app.route("/unlock/your/potential/math")
+def unlock_potential_math():
+    return render_template("unlock_potential_math.html")
+
 @app.route("/about")
 def about():
     return render_template("about.html")
